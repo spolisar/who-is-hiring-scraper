@@ -1,0 +1,3 @@
+[submodule "HNTools"]
+	path = HNTools
+	url = https://github.com/spolisar/HNTools
