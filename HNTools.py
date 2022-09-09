@@ -1,5 +1,6 @@
 import http.client
 import json
+import datetime
 
 # tools built to assist in scraping data from hackernews for building data files from whoishiring threads
 # written for v0 of Hacker News api
@@ -46,6 +47,9 @@ class HNItem:
         self.time = time
         self.title = title
         self.type = itemType
+    
+    def getDateTime(self):
+        return datetime.datetime().fromtimestamp(self.time)
     
     def __iter__(self):
         yield from {
